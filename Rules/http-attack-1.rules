@@ -4,12 +4,12 @@ drop tcp any any -> $HOME_NET 80 (msg: "XSS Detection"; content:"|25 33 43|scrip
 drop tcp any any -> $HOME_NET 80 (msg:"XSS Detection"; flow:to_server,established; uricontent:"</script>"; nocase; sid:1000008; rev:1;)
 
 #SQL Injection
-drop tcp any any -> $HOME_NET any (msg:"4. SQL UNION SELECT Detection"; flow:established,to_server; content:"UNION"; nocase; http_uri; content:"SELECT"; nocase; http_uri; pcre:"/UNION.+SELECT/Ui"; sid:3000041; rev:1;)
+drop tcp any any -> $HOME_NET any (msg:"SQL UNION SELECT Detection"; flow:established,to_server; content:"UNION"; nocase; http_uri; content:"SELECT"; nocase; http_uri; pcre:"/UNION.+SELECT/Ui"; sid:3000041; rev:1;)
 
-drop tcp any any -> $HOME_NET any (msg:"4. SQL USER in URI Detection"; flow:established,to_server; content:"SELECT"; nocase; http_uri; content:"USER"; nocase; http_uri; pcre:"/SELECT[^a-z].+USER/Ui"; sid:3000042; rev:1;)
+drop tcp any any -> $HOME_NET any (msg:"SQL USER in URI Detection"; flow:established,to_server; content:"SELECT"; nocase; http_uri; content:"USER"; nocase; http_uri; pcre:"/SELECT[^a-z].+USER/Ui"; sid:3000042; rev:1;)
 
-drop tcp any any -> $HOME_NET any (msg:"4. SQL SLEEP Detection"; flow:established,to_server; content:"SELECT"; nocase; http_uri; content:"SLEEP|28|"; nocase; http_uri; pcre:"/\bSELECT.*?\bSLEEP\x28/Ui"; sid:3000043; rev:1;)
+drop tcp any any -> $HOME_NET any (msg:"SQL SLEEP Detection"; flow:established,to_server; content:"SELECT"; nocase; http_uri; content:"SLEEP|28|"; nocase; http_uri; pcre:"/\bSELECT.*?\bSLEEP\x28/Ui"; sid:3000043; rev:1;)
 
-drop tcp any any -> $HOME_NET any (msg:"4. SQL INFOMATION SCHEMA Detection"; flow:established,to_server; content:"information_schema"; nocase; http_uri; sid:3000044; rev:1;)
+drop tcp any any -> $HOME_NET any (msg:"SQL INFOMATION SCHEMA Detection"; flow:established,to_server; content:"information_schema"; nocase; http_uri; sid:3000044; rev:1;)
 
-drop tcp any any -> $HOME_NET any (msg:"4. SQL SELECT FROM Detection"; flow:established,to_server; content:"SELECT"; nocase; http_uri; content:"FROM"; nocase; http_uri; pcre:"/SELECT\b.*FROM/Ui"; sid:3000045; rev:1;)
+drop tcp any any -> $HOME_NET any (msg:"SQL SELECT FROM Detection"; flow:established,to_server; content:"SELECT"; nocase; http_uri; content:"FROM"; nocase; http_uri; pcre:"/SELECT\b.*FROM/Ui"; sid:3000045; rev:1;)
