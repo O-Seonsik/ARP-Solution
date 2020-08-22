@@ -1,5 +1,5 @@
 # Hyper-Strong-IPS(킹왕짱 쎈 IPS)
-## 4 BoB9th hackathon
+## BoB 9th Hackathon
 ### 개발 언어
 - C++
 ### 도구
@@ -16,4 +16,3 @@
 - 커널 소켓 버퍼 이용
 - 소켓 버퍼를 후킹
 
-    - 
