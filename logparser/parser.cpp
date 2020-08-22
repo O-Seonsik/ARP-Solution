@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <unistd.h>
+#include <cstring>
 
 using namespace std;
 
@@ -27,10 +28,27 @@ int statusObserver(char* path){
         getline(fread, read_line);
         if(fileLen < i){
             fileLen++;
-            cout << read_line << endl;
+//            cout << read_line << endl;
+        
+            printf("Time: ");
+            for(int i = 0; i < 19; i++) printf("%c", read_line[i]);
+            int i = 33;
+            printf("\nMsg: ");
+            while(true){
+                if(read_line[i] == ']'){
+                    int j = i+1;
+                    while(true){
+                        if(read_line[j] == '[') break;
+                        printf("%c", read_line[j]);
+                        j++;
+                    }
+                    break;
+                }
+                i++;
+            }
+            printf("\n");
         }
     }
-    fileLen -= 1;
     
     fread.close();
     
