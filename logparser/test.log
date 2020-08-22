@@ -1,6 +1,11 @@
-08/05/2020-09:49:01.613257  [**] [1:10001:1] tistory.com access [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.0.2:57548 -> 211.231.108.151:80
-08/05/2020-09:49:01.679909  [**] [1:10001:1] tistory.com access [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.0.2:57552 -> 211.231.108.151:80
-08/21/2020-13:36:17.179982  [**] [1:10001:1] tistory.com access [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.0.2:38174 -> 211.231.108.151:80
-08/21/2020-13:36:17.312874  [**] [1:10001:1] tistory.com access [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.0.2:38178 -> 211.231.108.151:80
-08/21/2020-13:36:21.807771  [**] [1:10001:1] tistory.com access [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.0.2:38182 -> 211.231.108.151:80
-08/21/2020-13:36:21.862413  [**] [1:10001:1] tistory.com access [**] [Classification: (null)] [Priority: 3] {TCP} 172.17.0.2:38186 -> 211.231.108.151:80
+08/22/2020-13:45:57.778641  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778650  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.38:0 -> 192.168.35.18:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0
+08/22/2020-13:45:57.778655  [wDrop] [**] [1:1000002:0] Ping of Death Attack!! DROPED!! [**] [Classification: (null)] [Priority: 3] {ICMP} 192.168.35.18:8 -> 192.168.35.38:0

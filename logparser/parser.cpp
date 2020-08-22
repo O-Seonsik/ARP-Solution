@@ -31,20 +31,25 @@ int statusObserver(char* path){
 //            cout << read_line << endl;
         
             printf("Time: ");
-            for(int i = 0; i < 19; i++) printf("%c", read_line[i]);
-            int i = 33;
+            int j = 0;
+            for(j = 0; j < 19; j++) printf("%c", read_line[j]);
+            
+            int spaceCnt = 0;
             printf("\nMsg: ");
             while(true){
-                if(read_line[i] == ']'){
-                    int j = i+1;
+                j++;
+                if(read_line[j] == ' ' ){
+                    spaceCnt++;
+                }
+                if(spaceCnt == 5){
                     while(true){
+                        j++;
                         if(read_line[j] == '[') break;
                         printf("%c", read_line[j]);
-                        j++;
                     }
+                    printf("\n");
                     break;
                 }
-                i++;
             }
             printf("\n");
         }
